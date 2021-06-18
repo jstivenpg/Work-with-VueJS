@@ -10,6 +10,9 @@
 <body>
     <div id="app">
         <h1>{{titulo}}</h1>
+
+        <input type="text" v-model="nuevaFruta">
+        <button @click="addFruit">Agregar</button>
         
         <ul>
             <li v-for="fruta of producto">
